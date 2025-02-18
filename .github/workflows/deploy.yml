@@ -52,6 +52,9 @@ jobs:
       # - name: Repository 파일 출력하기
       #   run: ls
 
+      - name: Setup Node
+        uses: actions/setup-node@v3
+
       - name: 빌드하기
         run: npm run build
 
