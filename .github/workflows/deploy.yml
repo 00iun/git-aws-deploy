@@ -70,5 +70,7 @@ jobs:
           aws-secret-access-key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
 
       - name: S3 기존파일 삭제
-        run: |
-          aws s3 rm --recursive s3://facebook-web-page-iun
+        run: aws s3 rm --recursive s3://facebook-web-page-iun
+
+      - name: S3 새 빌드파일로 s3 객체 업로드
+        run: aws s3 cp ./dist s3://facebook-web-page-iun/ --recursive
