@@ -25,7 +25,7 @@
 
 #       - name: Github Actions 자체 저장되어 있는 변수 사용해보기
 #         run: |
-#           echo $GITHUB_REPOSITORY
+#           echo $GITHUB_REPOSITORY 
 #           echo $GITHUB_SHA
 
 #       - name: Github Actions 자체 시크릿 변수 사용해보기
