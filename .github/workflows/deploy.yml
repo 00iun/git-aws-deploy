@@ -59,6 +59,5 @@ jobs:
 
       - name: 파일 출력하기
         run: |
-          ls
           cd dist
           ls
