@@ -16,3 +16,9 @@ jobs:
     steps:
       - name: Hello World 출력하기 # steps 이름 지정 (이건 쉽게 알아보려고)
         run: echo "Hello World" # 명령어 실행 (리눅스 문법)
+
+      - name: 여러 명령어 문장 작성하기
+        run: |
+          echo "Good"
+          echo "Morning"
+          pwd
