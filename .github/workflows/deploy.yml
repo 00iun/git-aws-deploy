@@ -22,7 +22,7 @@
 #           echo "Good"
 #           echo "Morning"
 #           pwd
-      
+
 #       - name: Github Actions 자체 저장되어 있는 변수 사용해보기
 #         run: |
 #           echo $GITHUB_REPOSITORY
@@ -31,7 +31,7 @@
 #       - name: Github Actions 자체 시크릿 변수 사용해보기
 #         # github 해당 레포지토리의 설정에서 Actions secrets and variables의 actions에서 변수설정을 할 수 있으며,
 #         # 이름 그대로 비밀이기 때문에 echo를 입력해도 ***로 표시될 뿐 볼 수 없다 (빈 공백만 아니면 잘 출력된 것)
-#         run: | 
+#         run: |
 #           echo ${{ secrets.MY_NAME }}
 #           echo ${{ secrets.MY_HOBBY }}
 
@@ -49,5 +49,11 @@ jobs:
       - name: Github Repository 파일 불러오기
         uses: actions/checkout@v4
 
-      - name: Repository 파일 출력하기
+      # - name: Repository 파일 출력하기
+      #   run: ls
+
+      - name: 빌드하기
+        run: npm run build
+
+      - name: 파일 출력하기
         run: ls
