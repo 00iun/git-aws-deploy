@@ -74,3 +74,6 @@ jobs:
 
       - name: S3 새 빌드파일로 s3 객체 업로드
         run: aws s3 cp ./dist s3://facebook-web-page-iun/ --recursive
+
+      - name: CloudFront 캐시 무효화
+        run: aws cloudfront create-invalidation --distribution-id E3IHJR4GYZD5KU --paths "/*"

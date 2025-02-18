@@ -12,6 +12,8 @@ function App() {
       <p>감사합니다</p>
       <h1>2025.02.17</h1>
       <p>AWS 코드 업데이트</p>
+      <h2>2025.02.18</h2>
+      <p>AWS github actions 배포자동화</p>
     </>
   )
 }
