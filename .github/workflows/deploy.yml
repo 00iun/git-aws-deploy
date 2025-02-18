@@ -15,4 +15,4 @@ jobs:
     # 하나의 Job은 여러개의 tep으로 이루어져있다.
     steps:
       - name: Hello World 출력하기 # steps 이름 지정 (이건 쉽게 알아보려고)
-      run: echo "Hello World" # 명령어 실행 (리눅스 문법)
+        run: echo "Hello World" # 명령어 실행 (리눅스 문법)
