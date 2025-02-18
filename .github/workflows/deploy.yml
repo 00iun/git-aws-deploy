@@ -56,7 +56,9 @@ jobs:
         uses: actions/setup-node@v3
 
       - name: 빌드하기
-        run: npm run build
+        run: |
+          npm install
+          npm run build
 
       # - name: 파일 출력하기
       #   run: ls
