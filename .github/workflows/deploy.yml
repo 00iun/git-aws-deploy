@@ -33,7 +33,7 @@
 #         # 이름 그대로 비밀이기 때문에 echo를 입력해도 ***로 표시될 뿐 볼 수 없다 (빈 공백만 아니면 잘 출력된 것)
 #         run: |
 #           echo ${{ secrets.MY_NAME }}
-#           echo ${{ secrets.MY_HOBBY }}
+#           echo ${{ secrets.MY_HOBBY }} 
 
 name: Deploy To S3 And Invalidate CludFront
 
@@ -66,7 +66,7 @@ jobs:
         uses: aws-actions/configure-aws-credentials@v4
         with:
           aws-region: ap-northeast-2
-          aws-access-key-id: ${{secrets.AWS_ACCESS_KEY_ID}}
+          aws-access-key-id: ${{secrets.AWS_ACCESS_KEY_ID}}`
           aws-secret-access-key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
 
       - name: S3 기존파일 삭제
